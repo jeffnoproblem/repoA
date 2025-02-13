@@ -1,0 +1,11 @@
+{
+  "name": "repoA",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:jeffnoproblem/repoA.git",
+  "author": "Jeff no Problem <jeff@mathsnoproblem.co.uk>",
+  "license": "MIT",
+  "devDependencies": {
+    "@kie/build-chain-action": "^3.5.6"
+  }
+}
