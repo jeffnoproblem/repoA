@@ -11,6 +11,6 @@ jobs:
       - name: Github action build chain. Cross-repo builds
         uses: kiegroup/github-action-build-chain@v3.5.6
         with:
-          definition-file: ../definitions.yaml
+          definition-file: https://raw.githubusercontent.com/jeffnoproblem/repoA/refs/heads/main/.github/definitions.yml
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
