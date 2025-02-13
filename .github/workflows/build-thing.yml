@@ -12,3 +12,5 @@ jobs:
         uses: kiegroup/github-action-build-chain@v3.5.6
         with:
           definition-file: ../definitions.yaml
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
