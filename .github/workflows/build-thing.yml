@@ -25,18 +25,17 @@ jobs:
       - run: env
       - run: node -v
       - uses: actions/checkout@v2
-
-      #   - run: yarn global add @kie/build-chain-action
-      #   - run: GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} build-chain build branch -p jeffnoproblem/repoA -b test -f .github/definitions.yml
+      - run: yarn global add @kie/build-chain-action
+      - run: GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} build-chain build branch -p jeffnoproblem/repoA -b test -f .github/definitions.yml
 
       # Install https://github.com/marketplace/actions/github-action-build-chain-cross-repo-builds
-      - name: Github action build chain. Cross-repo builds
-        # uses: kiegroup/github-action-build-chain@v3.5.6
-        uses: kiegroup/github-action-build-chain@v3
-        with:
-          #   definition-file: https://raw.githubusercontent.com/jeffnoproblem/repoA/refs/heads/main/.github/definitions.yml
-          definition-file: "https://raw.githubusercontent.com/jeffnoproblem/repoA/refs/heads/test/.github/definitions.yml"
-          logger-level: "debug"
-        #   flow-type: "branch"
-        env:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+    #   - name: Github action build chain. Cross-repo builds
+    #     # uses: kiegroup/github-action-build-chain@v3.5.6
+    #     uses: kiegroup/github-action-build-chain@v3
+    #     with:
+    #       #   definition-file: https://raw.githubusercontent.com/jeffnoproblem/repoA/refs/heads/main/.github/definitions.yml
+    #       definition-file: "https://raw.githubusercontent.com/jeffnoproblem/repoA/refs/heads/test/.github/definitions.yml"
+    #       logger-level: "debug"
+    #     #   flow-type: "branch"
+    #     env:
+    #       GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
