@@ -27,8 +27,7 @@ jobs:
 
       # Install https://github.com/marketplace/actions/github-action-build-chain-cross-repo-builds
       - name: Github action build chain. Cross-repo builds
-        uses: kiegroup/github-action-build-chain@v3.5.6
-        # uses: kiegroup/github-action-build-chain@v2.5
+        uses: kiegroup/github-action-build-chain@v3.5.5
         with:
           definition-file: https://raw.githubusercontent.com/jeffnoproblem/repoA/refs/heads/main/.github/definitions.yml
           logger-level: "debug"
