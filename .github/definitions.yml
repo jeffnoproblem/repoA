@@ -16,6 +16,6 @@ build: # Additionally, we can define specific configuration per repository
       # downstream: echo "build down"
   - project: jeffnoproblem/repoB
     build-command:
-      upstream: echo "build up"
-      current: echo "build current"
-      downstream: echo "build down"
+      # upstream: echo "build up"
+      current: yarn deploy
+      # downstream: echo "build down"
