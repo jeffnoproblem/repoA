@@ -11,9 +11,9 @@ default: # Define the default configuration for every repository.
 build: # Additionally, we can define specific configuration per repository
   - project: jeffnoproblem/repoA
     build-command:
-      upstream: echo "build up"
-      current: echo "build current"
-      downstream: echo "build down"
+      # upstream: echo "build up"
+      current: yarn deploy
+      # downstream: echo "build down"
   - project: jeffnoproblem/repoB
     build-command:
       upstream: echo "build up"

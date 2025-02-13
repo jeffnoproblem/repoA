@@ -5,7 +5,7 @@
   "repository": "git@github.com:jeffnoproblem/repoA.git",
   "author": "Jeff no Problem <jeff@mathsnoproblem.co.uk>",
   "license": "MIT",
-  "devDependencies": {
-    "@kie/build-chain-action": "^3.5.6"
+  "scripts": {
+    "deploy": "echo \"my fake deploy command\""
   }
 }
