@@ -13,4 +13,4 @@ jobs:
         with:
           definition-file: https://raw.githubusercontent.com/jeffnoproblem/repoA/refs/heads/main/.github/definitions.yml
         env:
-          TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
