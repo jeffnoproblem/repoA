@@ -9,7 +9,6 @@ permissions:
   checks: write
   contents: write
   deployments: write
-  id-token: write
   issues: write
   discussions: write
   packages: write
@@ -34,6 +33,6 @@ jobs:
           #   definition-file: https://raw.githubusercontent.com/jeffnoproblem/repoA/refs/heads/main/.github/definitions.yml
           definition-file: "https://raw.githubusercontent.com/jeffnoproblem/repoA/refs/heads/test/.github/definitions.yml"
           logger-level: "debug"
-          flow-type: "branch"
+        #   flow-type: "branch"
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
