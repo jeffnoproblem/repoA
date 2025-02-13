@@ -1,6 +1,7 @@
 version: "2.0"
 dependencies:
   - project: jeffnoproblem/repoB
+
   - project: jeffnoproblem/repoA
     dependencies:
       - project: jeffnoproblem/repoB
