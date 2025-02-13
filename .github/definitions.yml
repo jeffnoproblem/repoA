@@ -3,16 +3,18 @@ version: "2.3"
 dependencies: ./dependency-tree.yml
 default: # Define the default configuration for every repository.
   build-command:
-    upstream: echo "upstream"
-    # current: echo "current"
-    # after:
-    #   upstream: echo "after upstream"
-build: # Additionally, we can define specific configuration per repository
-  - project: jeffnoproblem/repoA
-    build-command:
-      # upstream: echo "build up"
-      current: echo "build current"
-  - project: jeffnoproblem/repoB
-    build-command:
-      # upstream: echo "build up"
-      current: echo "build current"
+    upstream: echo "hello $GITHUB_TOKEN"
+    current: echo "current"
+    after:
+      upstream: echo "after upstream"
+# build: # Additionally, we can define specific configuration per repository
+#   - project: jeffnoproblem/repoA
+#     build-command:
+#       upstream: echo "build up"
+#       current: echo "build current"
+#       downstream: echo "build down"
+#   - project: jeffnoproblem/repoB
+#     build-command:
+#       upstream: echo "build up"
+#       current: echo "build current"
+#       downstream: echo "build down"
