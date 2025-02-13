@@ -1,0 +1,20 @@
+name: Pull Request Tests
+run-name: ${{ github.actor }} running tests for a Pull Request
+on:
+    pull_request:
+        branches:
+            - main
+jobs:
+    Pull-Request-Pass-Test:
+        runs-on: ubuntu-latest
+        steps:
+            # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+            - name: Check out repository and build
+              uses: actions/checkout@v3
+            # Build the Application
+            - run: yarn
+            - run: yarn lint
+            - name: Build files
+              run: |
+                  export NODE_OPTIONS=--max_old_space_size=4096
+                  yarn build
