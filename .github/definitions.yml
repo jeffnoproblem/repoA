@@ -3,11 +3,15 @@ dependencies: ./dependency-tree.yml
 default: # Define the default configuration for every repository.
   build-command:
     upstream: echo "upstream"
-    current: echo "current"
-    after:
-      upstream: echo "after upstream"
+    # current: echo "current"
+    # after:
+    #   upstream: echo "after upstream"
 build: # Additionally, we can define specific configuration per repository
   - project: jeffnoproblem/repoA
     build-command:
       upstream: echo "build up"
-      current: echo "build current"
+      # current: echo "build current"
+  - project: jeffnoproblem/repoB
+    build-command:
+      upstream: echo "build up"
+      # current: echo "build current"
