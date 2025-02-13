@@ -1,14 +1,8 @@
 version: "2.3"
 
 dependencies:
-  - project: jeffnoproblem/repoB
-    clone:
-      - B
-      - BB
+  # - project: jeffnoproblem/repoB
 
   - project: jeffnoproblem/repoA
-    clone:
-      - A
-      - AA
-    dependencies:
-      - project: jeffnoproblem/repoB
+    # dependencies:
+    #   - project: jeffnoproblem/repoB
