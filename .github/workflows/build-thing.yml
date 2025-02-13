@@ -24,6 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: env
+      - uses: actions/checkout@v2
 
       # Install https://github.com/marketplace/actions/github-action-build-chain-cross-repo-builds
       - name: Github action build chain. Cross-repo builds
