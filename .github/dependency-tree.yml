@@ -1,8 +1,8 @@
 version: "2.3"
 
 dependencies:
-  - project: jeffnoproblem/repoB
+  # - project: jeffnoproblem/repoB
 
   - project: jeffnoproblem/repoA
-    dependencies:
-      - project: jeffnoproblem/repoB
+    # dependencies:
+    #   - project: jeffnoproblem/repoB
