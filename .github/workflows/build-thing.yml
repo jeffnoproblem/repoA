@@ -12,8 +12,7 @@ jobs:
         uses: kiegroup/github-action-build-chain@v3.5.6
         # uses: kiegroup/github-action-build-chain@v2.5
         with:
-          #   definition-file: https://raw.githubusercontent.com/jeffnoproblem/repoA/refs/heads/main/.github/definitions.yml
-          definition-file: ../definitions.yml
+          definition-file: https://raw.githubusercontent.com/jeffnoproblem/repoA/refs/heads/main/.github/definitions.yml
           logger-level: "debug"
           flow-type: "branch"
         env:
