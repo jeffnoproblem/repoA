@@ -14,5 +14,5 @@ build: # Additionally, we can define specific configuration per repository
       current: echo "build current"
   - project: jeffnoproblem/repoB
     build-command:
-      upstream: echo "build up"
-      # current: echo "build current"
+      # upstream: echo "build up"
+      current: echo "build current"
